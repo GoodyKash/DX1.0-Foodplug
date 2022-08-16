@@ -29,13 +29,100 @@ span a{
 }
 
 .btn-main:hover{
-    background: transparent;    
+    background: transparent; 
+    color: var(--main-color);   
+}
+/* about us section starts here */
+.about-us_banner-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid tomato; */
+    text-align: center;
+    height: 250px;
+    background: var(--gray-gradient), url(./img/about3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.about-us_banner-holder h2{
+    color: var(--main-color);
+}
+.about-us_banner-holder p{
+    margin: 20px 0;
+}
+.btn-waves{
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background: var(--main-color);
+    border:2px solid var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ripple 2s infinite;
+}
+.explore-foods{
+    padding: 30px 0;
+    /* border: 3px solid tomato; */
+    border-bottom: 70px solid var(--main-color);
+    width: 90%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+}
+.explore-foods h2{
+    color: var(--main-color);
+}
+.explore-foods h2+p{
+    margin: 20px;
+}
+.foodcard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.foodcard-item{
+    /* border: 3px solid tomato; */
+    width: 320px;
+    overflow: hidden;
+}
+.foodcard_image-holder{
+    height: 250px;
+    /* border: 3px solid black; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+.foodcard_image-holder img{
+    width: 100%;
+    height: 100%;
+}
+.foodcard_text-holder h4,
+.foodcard_text-holder h3{
+    margin: 10px;
+}
+.foodcard_text-holder span{
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.foodcard_text-holder button:hover{
+    color: var(--main-color);
 }
 .faq{
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    padding-top:20px;
 }
+    
 
 .faqs_container{
     display: flex;
